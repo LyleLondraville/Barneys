@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://wwww.w3.org/2001/XMLSchema" xmlns:xsi="http://wwww.w3.org/2001/XMLSchema-instance">
+  <soapenv:Header>
+    <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" soapenv:mustUnderstand="1">
+      <wsse:UsernameToken xmlns:xsi="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xsi:Id="UsernameToken-1">
+        <wsse:Username>barneys_154</wsse:Username>
+        <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">A51/97l35FusovDmQVEPCg98IddzzvoAOv2MYmzRpo0Ljg8+n1Wr0Eu+h8GOHdV153nuE3CxGun0+V
+BAMuhMOL+GHWmAa3helSl8VPFMXRF3pcNLXWgSf29MKKwlnC1twCC93JRCC/doa4eWL/69IUptWIic9eikK0LLUVraexzroTPVRmZF04foWLAQPcEzH4iAM3Tfq9MxhWKqH8FD/XQnGrNOGALDr/RyddX1xmbrfQvBasNiNTm20lmnvS2leTNHBdHa3aL4Z5EtXW2LPrT2z/
+G13YXWnPHIHaA9jIPU9cG5eTaGWZWmsv4FsuKZOisu+wqyGuiYctq4QPwoaA==</wsse:Password>
+      </wsse:UsernameToken>
+    </wsse:Security>
+  </soapenv:Header>
+  <soapenv:Body>
+    <ns3:requestMessage xmlns:ns3="urn:schemas-cybersource-com:transaction-data-1.129">
+      <ns3:merchantID>barneys_154</ns3:merchantID>
+      <ns3:merchantReferenceCode>CO-o448845257</ns3:merchantReferenceCode>
+      <ns3:billTo>
+        <ns3:firstName>FIRST NAME HERE</ns3:firstName>
+        <ns3:lastName>LAST NAME HERE</ns3:lastName>
+        <ns3:street1>ADDRESS HERE</ns3:street1>
+        <ns3:city>CITY HERE</ns3:city>
+        <ns3:state>STATE INITALS HERE</ns3:state>
+        <ns3:postalCode>ZIP CODE HERE</ns3:postalCode>
+        <ns3:country>US</ns3:country>
+        <ns3:phoneNumber>PHONE HERE</ns3:phoneNumber>
+        <ns3:email>EMAIL HERE</ns3:email>
+      </ns3:billTo>
+      <ns3:purchaseTotals>
+        <ns3:currency>USD</ns3:currency>
+      </ns3:purchaseTotals>
+      <ns3:card>
+        <ns3:accountNumber>CARD NUMBER HERE</ns3:accountNumber>
+        <ns3:expirationMonth>EXPERATION MONTH HERE</ns3:expirationMonth>
+        <ns3:expirationYear>EXPERATION YEAR HERE</ns3:expirationYear>
+        <ns3:cvNumber>CVV HERE</ns3:cvNumber>
+        <ns3:cardType>001</ns3:cardType>
+      </ns3:card>
+      <ns3:recurringSubscriptionInfo>
+        <ns3:frequency>on-demand</ns3:frequency>
+      </ns3:recurringSubscriptionInfo>
+      <ns3:decisionManager>
+        <ns3:enabled>false</ns3:enabled>
+      </ns3:decisionManager>
+      <ns3:paySubscriptionCreateService run="true"></ns3:paySubscriptionCreateService>
+    </ns3:requestMessage>
+  </soapenv:Body>
+</soapenv:Envelope>
